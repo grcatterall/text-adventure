@@ -1,6 +1,6 @@
-# App Academy Adventure
+# Adventure
 
-Welcome to App Academy Adventure! For this project, you will add different
+Welcome to Adventure! For this project, you will add different
 item types to a text adventure using OOP principles. Use the test specs to guide
 you as you work through each task described below.
 
