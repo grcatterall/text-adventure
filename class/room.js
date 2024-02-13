@@ -17,10 +17,11 @@ class Room {
         console.log("");
         if (this.items.length > 0) {
             console.log(`Items: ${this.items.map(item => item.name).join(", ")}`);
+            console.log("");
         }
         if (this.enemy) {
-            console.log("");
             console.log(`Enemy: ${this.enemy.name} - is ${this.enemy.isDead ? 'Dead' : 'Alive'}`);
+            console.log("");
         }
         console.log(this.getExitsString());
         console.log("");

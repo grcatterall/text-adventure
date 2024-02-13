@@ -41,7 +41,8 @@ module.exports = {
             name: "sandwich",
             description: "A tasty looking sandwich",
             room: 2,
-            isFood: true
+            isFood: true,
+            health: 8
         }
     ],
     enemies: [
@@ -61,6 +62,19 @@ module.exports = {
             ]
         },
         {
+            name: "troll",
+            description: "Oaf",
+            room: 4,
+            health: 20,
+            attack: 5,
+            drops: [
+                {
+                    name: "dusty key",
+                    description: "A dusty key, where could it lead to?",
+                }
+            ]
+        },
+        {
             name: "wizard",
             description: "evil sourcerer",
             room: 3,
@@ -76,7 +90,8 @@ module.exports = {
                 {
                     name: "bread loaf",
                     description: "Fresh from the bakery",
-                    isFood: true
+                    isFood: true,
+                    health: 4
                 }
             ]
         }

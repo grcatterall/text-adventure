@@ -22,8 +22,6 @@ class World {
             let roomData = roomList[i];
             let newRoom = new Room(roomData.name, roomData.description);
 
-            console.log(roomData);
-
             this.rooms[roomData.id] = newRoom;
         }
 

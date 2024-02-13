@@ -19,8 +19,10 @@ function printHelp() {
     console.log("  Type 'l' to look around");
     console.log("  Type 'i' to check your inventory");
     console.log("  Type 'take <item>' to take an item");
+    console.log("  Type 'equip <item>' to equip an item");
     console.log("  Type 'drop <item>' to drop an item");
     console.log("  Type 'eat <item>' to eat a food item");
+    console.log("  Type 'attack' to attack enemy in room");
     console.log("  Type 'n', 's', 'e', 'w' to move");
     console.log("");
 }
@@ -88,7 +90,7 @@ function processCommand() {
         } else if (cmd.startsWith("eat ")) {
             let itemName = cmd.substring(cmd.indexOf(' ') + 1);
 
-            player.dropItem(itemName);
+            player.eatItem(itemName);
 
         } else if (cmd.startsWith("attack")) {
             if (player.currentRoom.enemy) {

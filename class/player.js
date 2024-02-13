@@ -76,6 +76,7 @@ class Player extends Character {
         this.items.forEach((item, index) => {
             if (itemName == item.name && item instanceof Food) {
                 this.items.splice(index, 1);
+                this.health += item.health;
             }
         }); 
     }

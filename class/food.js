@@ -6,9 +6,11 @@ const { Item } = require('./item');
 class Food extends Item {
     constructor(
         name, 
-        description
+        description,
+        health
     ) {
         super(name, description);
+        this.health = health;
     }
 }
 
